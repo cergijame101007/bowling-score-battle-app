@@ -8,4 +8,3 @@ const NewRoomPage = () => {
 };
 
 export default NewRoomPage;
-
