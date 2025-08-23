@@ -5,3 +5,11 @@ export type RoomParams = {
 export type RoomPageProps = {
   params: RoomParams;
 };
+
+export type UsersParams = {
+  id: string;
+};
+
+export type UsersPageProps = {
+  params: UsersParams;
+};
