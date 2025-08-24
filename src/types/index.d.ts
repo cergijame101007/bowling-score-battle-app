@@ -13,3 +13,9 @@ export type UsersParams = {
 export type UsersPageProps = {
   params: UsersParams;
 };
+
+export type ButtonProps = {
+  onClick: () => void;
+  children: React.ReactNode;
+  className?: string;
+} & Record<string, any>;
