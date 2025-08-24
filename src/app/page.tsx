@@ -7,6 +7,20 @@ const Home = () => {
       <p className="text-sm">スコアを共有して、チーム戦で対決！</p>
       <div className="flex gap-3">
         <Link
+          href="/signup"
+          className="rounded-lg border px-4 py-2"
+        >
+          サインアップ
+        </Link>
+        <Link
+          href="/login"
+          className="rounded-lg bg-black px-4 py-2 text-white dark:bg-white dark:text-black"
+        >
+          ログイン
+        </Link>
+      </div>
+      <div className="flex gap-3">
+        <Link
           href="/users/ABC123"
           className="rounded-lg border px-4 py-2"
         >
