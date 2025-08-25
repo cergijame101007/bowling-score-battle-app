@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { supabase } from "@/lib/supabase/client";
 
-const POST = async (request: Request) => {
+export const POST = async (request: Request) => {
   try {
     const { userId, nickname, rawPassword } = await request.json();
 
@@ -45,5 +45,3 @@ const POST = async (request: Request) => {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 };
-
-export default POST
